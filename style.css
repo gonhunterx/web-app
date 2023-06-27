@@ -7,6 +7,15 @@ header {
     box-shadow: 4px 3px 2px 1px #3c3c3c;
     border: #3c3c3c 1px solid;
   }
+  h1{
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 2px 1px #3c3c3c;
+    border: #3c3c3c 1px solid;
+  }
 select{
     padding: 8px;
     text-align: center;
@@ -21,7 +30,7 @@ input{
 }
 body{
     background-color: royalblue;
-    color: #fff;
+    color: #010101;
     padding: 0;
     text-align: center;
     margin-bottom: 20px;
@@ -37,7 +46,7 @@ button{
     position: relative;
     background-color: royalblue;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
     font-size: 16px;
@@ -46,7 +55,7 @@ button{
   }
   
   .hover-icon-button:hover {
-    background-color: darkorange;
+    background-color: rgb(214, 121, 8);
   }
   
   .hover-icon-button::after {
@@ -69,29 +78,59 @@ button{
     border-radius: 20px;
 }
 #ulmenu {
-    background-color: rgb(214, 121, 8);
-    border-radius: 20px;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 20px;
-    list-style: none;
-    display: flex; /* Change the display to flex */
-    justify-content: center; /* Center the list items horizontally */
-  }
-  
-  #ulmenu li {
-    margin: 0 10px; /* Add some spacing between list items */
-  }
-  
-  #ulmenu li a {
-    text-decoration: none;
-    color: #fff;
-  }
+  border-radius: 20px;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#ulmenu li {
+  background-color: rgb(214, 121, 8);
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+#ulmenu li a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000000;
+  border: #000000 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  z-index: 1;
+}
+
+#ulmenu li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: royalblue;
+  border-radius: 0 5px 5px 0;
+  transition: left 0.3s;
+  z-index: -1;
+}
+
+#ulmenu li a:hover::before {
+  left: 0;
+}
+
+#ulmenu li a:hover {
+  color: black;
+}
+
   #meimg {
     height: 200px;
-    float: left;
     border-radius: 20px;
+    margin-bottom: 10px;
     box-shadow: 4px 3px 5px 1px #3c3c3c;
     transition: transform 0.3s ease-in-out;
 }
@@ -100,11 +139,44 @@ button{
 }
 footer{
     background-color: rgb(214, 121, 8);
-    color: #fff;
     padding: 10px;
     text-align: center;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 4px 3px 2px 1px #3c3c3c;
     border: #3c3c3c 1px solid;
+}
+#copyright{
+    color: black;
+
+}
+.sections-food{
+    list-style: none;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.sections-food li{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: #000000 1px solid;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: #000000 1px 1px 1px 1px;
+    background-color: rgb(214, 121, 8);
+}
+.sections-food li a{
+    text-decoration: none;
+    color: black;
 }
