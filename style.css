@@ -1,0 +1,100 @@
+header {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 2px 1px #3c3c3c;
+    border: #3c3c3c 1px solid;
+  }
+select{
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+input{
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+body{
+    background-color: royalblue;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+button{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.hover-icon-button {
+    position: relative;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .hover-icon-button:hover {
+    background-color: darkorange;
+  }
+  
+  .hover-icon-button::after {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-icon-button:hover::after {
+    opacity: 1;
+  }
+.search{
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 2px;
+    border-radius: 20px;
+}
+#ulmenu {
+    background-color: rgb(214, 121, 8);
+    border-radius: 20px;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex; /* Change the display to flex */
+    justify-content: center; /* Center the list items horizontally */
+  }
+  
+  #ulmenu li {
+    margin: 0 10px; /* Add some spacing between list items */
+  }
+  
+  #ulmenu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #meimg {
+    height: 200px;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 4px 3px 5px 1px #3c3c3c;
+    transition: transform 0.3s ease-in-out;
+}
+#meimg:hover {
+    transform: translate(-5px, -10px);
+}
