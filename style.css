@@ -98,3 +98,13 @@ button{
 #meimg:hover {
     transform: translate(-5px, -10px);
 }
+footer{
+    background-color: rgb(214, 121, 8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 2px 1px #3c3c3c;
+    border: #3c3c3c 1px solid;
+}
