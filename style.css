@@ -43,6 +43,7 @@ button{
     text-align: center;
     margin-bottom: 20px;
     border-radius: 20px;
+    z-index: 110;
 }
 .hover-icon-button {
     position: relative;
@@ -259,4 +260,19 @@ footer{
 }
 #introp{
   color: #000000;
+}
+.services-content{
+  border: #000000 1px solid;
+  border-radius: 20px;
+  color: #000000;
+  margin-top: 80px;
+}
+html{
+  scroll-behavior: smooth;
+}
+.loginsection{
+  border: #000000 1px solid;
+  border-radius: 20px;
+  color: #000000;
+  margin-top: 80px;
 }
